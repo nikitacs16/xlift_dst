@@ -1,1 +1,28 @@
-# xlift_dst
+### Installation
+Transformers version 4.2.2
+
+```
+pip install transformers==4.2.2
+```
+### OpenSubtitles data
+Please download opensubtitles for the respective language pairs:
+
+(http://opus.nlpl.eu/download.php?f=OpenSubtitles2016%2Fen-zh.txt.zi)[en-zh]
+(http://opus.nlpl.eu/download.php?f=OpenSubtitles2018%2Fde-en.txt.zip) [en-de]
+(http://opus.nlpl.eu/download.php?f=OpenSubtitles2018%2Fde-en.txt.zip) [en-it]
+
+### Intermediate Fine-tuning
+
+#### Preprocessing
+Sample 200K lines from the source and target files. (All files will be released after the anonymity period)
+
+```
+python convert.py --file1 source.txt --file2 target.txt --ofile output.txt --tlm
+```
+#### Training
+
+For bidm, tlm, xdm - use the run_simple.sh
+For response masking - use run_response.sh
+
+### Target Task training
+Use the new versions of multilingual models in the code for the respective target task. 

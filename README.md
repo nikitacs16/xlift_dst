@@ -6,10 +6,11 @@ pip install transformers==4.2.2
 ```
 ### OpenSubtitles data
 Please download opensubtitles for the respective language pairs:
+[en-zh](http://opus.nlpl.eu/download.php?f=OpenSubtitles2016%2Fen-zh.txt.zip)
 
-(http://opus.nlpl.eu/download.php?f=OpenSubtitles2016%2Fen-zh.txt.zi)[en-zh]
-(http://opus.nlpl.eu/download.php?f=OpenSubtitles2018%2Fde-en.txt.zip) [en-de]
-(http://opus.nlpl.eu/download.php?f=OpenSubtitles2018%2Fde-en.txt.zip) [en-it]
+[en-de](http://opus.nlpl.eu/download.php?f=OpenSubtitles2018%2Fde-en.txt.zip)
+
+[en-it](http://opus.nlpl.eu/download.php?f=OpenSubtitles2018%2Fde-en.txt.zip)
 
 ### Intermediate Fine-tuning
 

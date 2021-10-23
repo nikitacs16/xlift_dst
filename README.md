@@ -1,31 +1,12 @@
-### Installation
-Transformers version 4.2.2
+# Cross-lingual Intermediate Fine-tuning improves Dialogue State Tracking (EMNLP 2021)
 
-```
-pip install transformers==4.2.2
-```
-### OpenSubtitles data
-Please download opensubtitles for the respective language pairs:
+Arxiv version of the paper [here](https://arxiv.org/abs/2109.13620)
 
-[en-zh](http://opus.nlpl.eu/download.php?f=OpenSubtitles2016%2Fen-zh.txt.zip)
+Recent progress in task-oriented neural dialogue systems is largely focused on a handful of languages, as annotation of training data is tedious and expensive. Machine translation has been used to make systems multilingual, but this can introduce a pipeline of errors. Another promising solution is using cross-lingual transfer learning through pretrained multilingual models. Existing methods train multilingual models with additional codemixed task data or refine the cross-lingual representations through parallel ontologies. In this work, we enhance the transfer learning process by intermediate fine-tuning of pretrained multilingual models, where the multilingual models are fine-tuned with different but related data and/or tasks. Specifically, we use parallel and conversational movie subtitles datasets to design cross-lingual intermediate tasks suitable for downstream dialogue tasks. We use only 200K lines of parallel data for intermediate fine-tuning which is already available for 1782 language pairs. We test our approach on the cross-lingual dialogue state tracking task for the parallel MultiWoZ (English→Chinese, Chinese→English) and Multilingual WoZ (English→German, English→Italian) datasets. We achieve impressive improvements (> 20% on joint goal accuracy) on the parallel MultiWoZ dataset and the Multilingual WoZ dataset over the vanilla baseline with only 10% of the target language task data and zero-shot setup respectively
 
-[en-de](http://opus.nlpl.eu/download.php?f=OpenSubtitles2018%2Fde-en.txt.zip)
+### Repository organization
+`intermedite_finetuning` : Methods under Section 3 of the paper
+`multilingual_woz` : Redirection to the original repository. Experiments under Table 3.
+`multiwoz_sumbt` : Cleaned version of the [SUMBT](https://arxiv.org/abs/1907.07421) model released by [ConvLab](https://github.com/thu-coai/ConvLab-2). Experiments under Table 2. 
 
-[en-it](http://opus.nlpl.eu/download.php?f=OpenSubtitles2018%2Fde-en.txt.zip)
-
-### Intermediate Fine-tuning
-
-#### Preprocessing
-Sample 200K lines from the source and target files. (All files will be released after the anonymity period)
-
-```
-python convert.py --file1 source.txt --file2 target.txt --ofile output.txt --tlm
-```
-#### Training
-
-For bidm, tlm, xdm - use `run_simple.sh`
-
-For response masking - use `run_response.sh`
-
-### Target Task training
-Instead of bert-base-multilingual-uncased, use the models generated in the previous step for any downstream task.
+The intermediate models are released on 🤗 Hugging Face under https://huggingface.co/nikitam/ 

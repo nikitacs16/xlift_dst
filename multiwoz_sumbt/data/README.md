@@ -3,3 +3,7 @@ The original dataset for Parallel MultiWoZ is [here](https://github.com/thu-coai
 For the dataset used in our experiments, please download the files from [here](https://uoe-my.sharepoint.com/:f:/g/personal/s1948463_ed_ac_uk/EmEjxwNpP7lEo-dVZKGIp6sB-f2U0zyZ7-9b5bXA1Z3Kag?e=HFwlYg)
 
 
+|Folder|Source|Target|
+|-----|-----|-----|
+|multiwoz_zh_states| Zh | En|
+|multiwoz_en_states| En | Zh|

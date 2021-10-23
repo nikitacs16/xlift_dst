@@ -3,7 +3,14 @@ This code is a cleaned up code from the ConvLab repository.
 For installation of ConvLab and further details please refer to the [source repository](https://github.com/thu-coai/ConvLab-2).
 
 ### Training
-We have added use of config files to faciliate easier experiment setup. A sample config.json file has been uploaded. 
+We have added use of config files to faciliate easier experiment setup. Sample config.json files have been uploaded. Please edit the fields under `bert_model` and `bert_model_name` in the `config.json` to the corresponding pre-trained/intermediate-fine-tuded multilinugal models.
+
+
+`config_en_state.json` for experiments from source language En to target language Zh
+
+`config_zh_state.json` for experiments from source language Zh to target language En
+
+
 
 To train the model:
 
@@ -13,7 +20,6 @@ m = SUMBTTracker(arg_path='/path/to/config.json')
 m.train()
 ```
 
-Please edit the fields under `bert_model` and `bert_model_name` in the `config.json` to the corresponding pre-trained/intermediate-fine-tuded multilinugal models.
 
 ### Evaluation
 For evaluation:

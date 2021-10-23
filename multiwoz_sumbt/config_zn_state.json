@@ -1,0 +1,47 @@
+{
+  "lang" : "zh",
+  "max_label_length" : 32,
+  "max_turn_length" : 22,
+  "hidden_dim" : 300,
+  "num_rnn_layers" : 1,
+  "zero_init_rnn" : false,
+  "attn_head" : 4,
+  "do_eval" : true,
+  "do_train" : false,
+  "distance_metric" : "euclidean",
+  "train_batch_size" : 2,
+  "dev_batch_size" : 1,
+  "eval_batch_size" : 16,
+  "learning_rate" : 5e-5,
+  "num_train_epochs" : 3,
+  "patience" : 10,
+  "warmup_proportion" : 0.1,
+  "local_rank" : -1,
+  "seed" : 42,
+  "gradient_accumulation_steps" : 2,
+  "fp16" : false,
+  "loss_scale" : 0,
+  "do_not_use_tensorboard" : false,
+  "fix_utterance_encoder" : false,
+  "do_eval" : true,
+  "num_train_epochs" : 300,
+
+  "bert_model" : "hfl/chinese-bert-wwm-ext",
+  "bert_model_cache_dir" : "pre-trained-models/",
+  "bert_model_name" : "hfl/chinese-bert-wwm-ext",
+  "do_lower_case" : true,
+  "task_name" : "bert-gru-sumbt",
+  "nbt" : "rnn",
+  "target_slot" : "all",
+
+  
+  
+  "max_seq_length" : 64,
+  
+
+  "fp16_loss_scale" : 0.0,
+  "data_dir" : "/path/to/multiwoz_zh_states",
+  "tf_dir" : "tensorboard",
+  "tmp_data_dir" : "/path/to/store/processed/data",
+  "output_dir" : "/path/to/output/folder"
+}

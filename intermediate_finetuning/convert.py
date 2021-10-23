@@ -231,11 +231,11 @@ parser = argparse.ArgumentParser(description='Process to chat-level files')
 parser.add_argument('--file1',  type=str, help='First file to process')
 parser.add_argument('--file2',  type=str, nargs="?")
 parser.add_argument('--ofile',  type=str) 
-parser.add_argument('--parallel', action='store_true')
+parser.add_argument('--xdm', action='store_true') #xdm 
 parser.add_argument('--single', action='store_true')
-parser.add_argument('--mixed', action='store_true')
+parser.add_argument('--mixed', action='store_true') 
 parser.add_argument('--tlm', action='store_true')
-parser.add_argument('--bidm', action='store_true')
+parser.add_argument('--monodm', action='store_true') #monodm
 parser.add_argument('--response', action='store_true')
 parser.add_argument('--count', type=int)
 
@@ -243,7 +243,7 @@ args = parser.parse_args()
 chat_count = args.count
 max_length = 15
 
-if args.parallel:
+if args.xdm:
 	parallel_dialogue()
 if args.mixed:
 	mixed_dialogue()
@@ -251,7 +251,7 @@ if args.single:
 	single_dialogue()
 if args.tlm:
 	tlm_dialogue()
-if args.bidm:
+if args.monodm:
 	bilingual_dialogue()
 
 if args.response:

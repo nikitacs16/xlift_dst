@@ -6,7 +6,10 @@ Recent progress in task-oriented neural dialogue systems is largely focused on a
 
 ### Repository organization
 `intermedite_finetuning` : Methods under Section 3 of the paper
+
 `multilingual_woz` : Redirection to the original repository. Experiments under Table 3.
+
 `multiwoz_sumbt` : Cleaned version of the [SUMBT](https://arxiv.org/abs/1907.07421) model released by [ConvLab](https://github.com/thu-coai/ConvLab-2). Experiments under Table 2. 
+
 
 The intermediate models are released on 🤗 Hugging Face under https://huggingface.co/nikitam/ 

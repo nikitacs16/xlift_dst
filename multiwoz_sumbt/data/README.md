@@ -7,3 +7,11 @@ For the dataset used in our experiments, please download the files from [here](h
 |-----|-----|-----|
 |multiwoz_zh_states| Zh | En|
 |multiwoz_en_states| En | Zh|
+
+
+We have uploaded two validation sets: The `val.og.json` contains monolingual validation set. Thus,`val.og.json` under `multiwoz_en_states` contains English validation set while `val.json` contains Chinese dialogue with English dialogue states. Please refer to table below to understand the validation and test sets in terms of dialogue and dialogue states. 
+
+|Folder|Source Dialogue|Source Dialogue State|Target Dialogue| Target Dialogue State
+|-----|-----|-----|-----|-----|
+|multiwoz_zh_states| Zh | Zh | En | Zh |
+|multiwoz_en_states| En | En | Zh | En |

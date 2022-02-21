@@ -6,7 +6,7 @@ Recent progress in task-oriented neural dialogue systems is largely focused on a
 
 Update:
 
-21/02/2022 - The correct train.json has been uploaded for the MultiWoZ experiments as stated in the [README](https://github.com/nikitacs16/xlift_dst/tree/main/multiwoz_sumbt/data). Thanks to yuxiang for pointing it out!
+21/02/2022 - The correct train.json has been uploaded for the MultiWoZ experiments as stated in the [README](https://github.com/nikitacs16/xlift_dst/tree/main/multiwoz_sumbt/data). Thanks to Yuxiang for pointing it out!
 
 
 ### Repository organization
